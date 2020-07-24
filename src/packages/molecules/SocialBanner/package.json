@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/social-banner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "graffft-waggle: a social-banner component",
   "keywords": [
     "social-banner"
@@ -38,6 +38,6 @@
     "styled-components": "^5.1.1"
   },
   "dependencies": {
-    "@graffft-waggle/icon": "0.0.1"
+    "@graffft-waggle/icon": "^0.0.2"
   }
 }

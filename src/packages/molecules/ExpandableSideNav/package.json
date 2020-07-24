@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/expandable-side-nav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "graffft-waggle: a expandable-side-nav component",
   "keywords": [
     "expandable-side-nav"
@@ -38,7 +38,7 @@
     "styled-components": "^5.1.1"
   },
   "dependencies": {
-    "@graffft-waggle/burger": "0.0.1",
+    "@graffft-waggle/burger": "^0.0.2",
     "use-onclickoutside": "^0.3.1"
   }
 }
