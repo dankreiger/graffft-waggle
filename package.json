@@ -28,7 +28,7 @@
     "release:publish": "yarn lerna publish --conventional-commits",
     "start": "react-scripts start",
     "storybook": "start-storybook -p 9009 -s public",
-    "test": "react-scripts test --env=jsdom-fourteen",
+    "test": "find ./src/packages/**/**/lib -name \"__tests__\" -exec rm -rf {} + && react-scripts test --env=jsdom-fourteen",
     "test:coverage": "yarn test --coverage --watchAll"
   },
   "husky": {
@@ -62,6 +62,7 @@
       "src/packages/**/*.{ts,tsx}",
       "!src/packages/**/*.stories.{ts,tsx}",
       "!src/packages/**/story-*.{ts,tsx}",
+      "!src/candidates/",
       "!<rootDir>/node_modules/"
     ],
     "coverageThreshold": {
