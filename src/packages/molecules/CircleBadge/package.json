@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/circle-badge",
-  "version": "0.0.2",
+  "version": "0.0.3-alpha.0",
   "description": "graffft-waggle: a circle-badge component",
   "keywords": [
     "circle-badge"
@@ -36,5 +36,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
-  }
+  },
+  "gitHead": "3aad81a35129708683681bec3d88af3c770770d2"
 }
