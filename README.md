@@ -6,10 +6,10 @@ repo of isolated components managed by lerna
 
 Grid
 
-- [ ] add grid
+- [ ] add legacy grid
 
 Molecules
 
-- [ ] checkbox list?
+- [ ] add a checkbox list component?
 
 

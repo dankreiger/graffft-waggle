@@ -7,7 +7,7 @@ import {
   headerHeight,
   ScrollToTopButton,
 } from './App.styles';
-import { Kopf } from '@graffft-waggle/Kopf';
+import { Kopf } from '@graffft-waggle/kopf';
 import { headerNavItems, sideNavItems, useScrollToTop } from './constants';
 
 function App() {
