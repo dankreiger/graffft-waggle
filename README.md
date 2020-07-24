@@ -1,5 +1,7 @@
 ## Graffft Waggle
 
+repo of isolated components managed by lerna
+
 ### Todo
 
 Grid
@@ -8,6 +10,6 @@ Grid
 
 Molecules
 
-- [ ] checkbox list
+- [ ] checkbox list?
 
 
