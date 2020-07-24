@@ -1,6 +1,6 @@
 ## Graffft Waggle
 
-![Node.js CI](https://github.com/dankreiger/graffft-waggle/workflows/Node.js%20CI/badge.svg)
+![CI](https://github.com/dankreiger/graffft-waggle/workflows/Node.js%20CI/badge.svg)
 
 repo of isolated components managed by lerna
 
