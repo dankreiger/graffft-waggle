@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "integrationFolder": "cypress/e2e",
+  "defaultCommandTimeout": 10000,
+  "env": {
+    "HOME": "/",
+    "PROJECTS": "/projects",
+    "ABOUT": "/about",
+    "CONTACT": "/contact"
+  }
+}

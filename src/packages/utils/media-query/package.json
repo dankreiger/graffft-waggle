@@ -1,0 +1,35 @@
+{
+  "name": "@graffft-waggle/media-query",
+  "version": "0.0.1",
+  "description": "graffft-waggle: a media-query utility",
+  "keywords": [
+    "media-query"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Dan Kreiger <dan@dankreiger.com>",
+  "homepage": "https://github.com/dankreiger/graffft-waggle#readme",
+  "license": "MIT",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "component": "MediaQuery",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dankreiger/graffft-waggle.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/dankreiger/graffft-waggle/issues"
+  }
+}

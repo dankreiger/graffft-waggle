@@ -1,0 +1,126 @@
+{
+  "name": "graffft-waggle",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "workspaces": [
+    "src/packages/**/*",
+    "../src/packages/**/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna clean -y && yarn clean:pre-build && node scripts/build --all && yarn clean:post-build && yarn bootstrap",
+    "build-app": "react-scripts build",
+    "build-storybook": "build-storybook -s public",
+    "clean": "lerna clean",
+    "clean:post-build": "./scripts/clean_post_build.sh",
+    "clean:pre-build": "./scripts/clean_pre_build.sh",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "eject": "react-scripts eject",
+    "release": "standard-version && yarn build && yarn release:publish && yarn build-storybook && echo 'todo: add deploy script' ",
+    "release:prerelease": "yarn build && yarn lerna publish --conventional-prerelease --pre-dist-tag next --yes",
+    "release:publish": "yarn lerna publish --conventional-commits",
+    "start": "react-scripts start",
+    "storybook": "start-storybook -p 9009 -s public",
+    "test": "react-scripts test --env=jsdom-fourteen",
+    "test:coverage": "yarn test --coverage --watchAll"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx,jsx,json,css}": [
+      "prettier --single-quote --write"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/packages/**/*.{ts,tsx}",
+      "!src/packages/**/*.stories.{ts,tsx}",
+      "!src/packages/**/story-*.{ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "@storybook/addon-a11y": "^6.0.0-beta.32",
+    "@storybook/addon-actions": "^6.0.0-beta.32",
+    "@storybook/addon-controls": "^6.0.0-beta.32",
+    "@storybook/addon-docs": "^6.0.0-beta.32",
+    "@storybook/addon-links": "^6.0.0-beta.32",
+    "@storybook/addon-storysource": "^6.0.0-beta.32",
+    "@storybook/addon-viewport": "^6.0.0-beta.32",
+    "@storybook/addons": "^6.0.0-beta.32",
+    "@storybook/preset-create-react-app": "^3.1.2",
+    "@storybook/react": "^6.0.0-beta.32",
+    "@testing-library/cypress": "^6.0.0",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.3",
+    "@testing-library/user-event": "^12.0.11",
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.0",
+    "babel-loader": "^8.1.0",
+    "cypress": "^4.9.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
+    "minimist": "^1.2.5",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "rollup": "^2.18.1",
+    "rollup-plugin-insert": "^1.3.1",
+    "rollup-plugin-size-snapshot": "^0.12.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "styled-components": "^5.1.1",
+    "ts-jest": "^26.1.1",
+    "typescript": "~3.9.5"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  }
+}

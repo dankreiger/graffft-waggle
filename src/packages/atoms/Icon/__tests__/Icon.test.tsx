@@ -1,0 +1,16 @@
+import React from 'react';
+import { Icon } from '../Icon';
+import { render } from '@testing-library/react';
+import { IconType } from '../types/Icon.enums';
+import { IconProps } from '../types/Icon.interfaces';
+
+const props: IconProps = {
+  title: IconType.GITHUB,
+};
+
+describe('Header', () => {
+  test('renders Icon with different titles', () => {
+    const { getByTitle } = render(<Icon {...props} />);
+    expect(getByTitle(IconType.GITHUB)).toBeInTheDocument();
+  });
+});
