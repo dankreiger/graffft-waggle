@@ -23,7 +23,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "eject": "react-scripts eject",
-    "release": "npx standard-version && yarn build && yarn release:publish && yarn build-storybook && echo 'todo: add deploy script' ",
+    "release": "standard-version && yarn build && yarn release:publish && yarn build-storybook && echo 'todo: add deploy script' ",
     "release:prerelease": "yarn build && yarn lerna publish --conventional-prerelease --pre-dist-tag next --yes",
     "release:publish": "yarn lerna publish --conventional-commits",
     "start": "react-scripts start",
@@ -115,6 +115,7 @@
     "rollup-plugin-insert": "^1.3.1",
     "rollup-plugin-size-snapshot": "^0.12.0",
     "rollup-plugin-typescript2": "^0.27.1",
+    "standard-version": "^9.1.0",
     "styled-components": "^5.1.1",
     "ts-jest": "^26.1.1",
     "typescript": "~3.9.5"
