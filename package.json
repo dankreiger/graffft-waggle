@@ -1,6 +1,6 @@
 {
   "name": "graffft-waggle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
@@ -23,7 +23,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "eject": "react-scripts eject",
-    "release": "standard-version && yarn build && yarn release:publish && yarn build-storybook && echo 'todo: add deploy script' ",
+    "release": "npx standard-version && yarn build && yarn release:publish && yarn build-storybook && echo 'todo: add deploy script' ",
     "release:prerelease": "yarn build && yarn lerna publish --conventional-prerelease --pre-dist-tag next --yes",
     "release:publish": "yarn lerna publish --conventional-commits",
     "start": "react-scripts start",
