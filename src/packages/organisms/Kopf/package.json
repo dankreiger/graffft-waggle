@@ -13,7 +13,7 @@
   "license": "MIT",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
+  "types": "lib/packages/organisms/Kopf/index.d.ts",
   "component": "Kopf",
   "directories": {
     "lib": "lib",

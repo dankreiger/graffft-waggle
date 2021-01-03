@@ -29,7 +29,7 @@ interface KopfHeaderNavItem {
 
 | Name | Type | Description |
 |:-----|:-----|:------------|
-| headerLogo | `string | number | JSX.Element` | Main header logo |
+| headerLogo | `string|number|JSX.Element` | Main header logo |
 | headerNavItems | `KopfHeaderNavItem[]` | Nav items in header |
 
 
