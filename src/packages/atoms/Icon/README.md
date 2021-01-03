@@ -27,8 +27,8 @@ import { Icon } from '@graffft-waggle/icon';
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| color | `string` | `'#000'`  | The color of the svg icon. |
-| size | `string` | `24px`  | Size (width and height) of the icon. |
+| color | `string`|`'#000'`  | The color of the svg icon. |
+| size | `string`|`24px`  | Size (width and height) of the icon. |
 
 
 ## Demos

@@ -29,10 +29,10 @@ import { Image } from '@graffft-waggle/circle-badge';
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| size | `string` | `86px`  | width/height of circle badge |
-| bgColor | `string` | `'#fff'`  | background color of circle badge. |
-| handleClick | `() => void` | `() => {}`  |  onClick callback. |
-| customScss | `string` | `''`  |  custom scss for wrapper element |
+| size | `string`|`86px`  | width/height of circle badge |
+| bgColor | `string`|`'#fff'`  | background color of circle badge. |
+| handleClick | `() => void`|`() => {}`  |  onClick callback. |
+| customScss | `string`|`''`  |  custom scss for wrapper element |
 
 
 ## Demos

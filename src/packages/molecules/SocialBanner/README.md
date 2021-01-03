@@ -43,11 +43,11 @@ enum SocialBannerDirection {
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| linkSize | `number` | `24`  | size (width and height) of the banner item |
-| paddingSize | `number` | `'4'`  | padding inside banner item |
-| itemMargin | `string` | `5px`  |   margin between banner items |
-| direction | `SocialBannerDirection` | `horizontal`  |  direction of items |
-| customScss | `string` | `''`  |  custom scss for wrapper element |
+| linkSize | `number`|`24`  | size (width and height) of the banner item |
+| paddingSize | `number`|`'4'`  | padding inside banner item |
+| itemMargin | `string`|`5px`  |   margin between banner items |
+| direction | `SocialBannerDirection`|`horizontal`  |  direction of items |
+| customScss | `string`|`''`  |  custom scss for wrapper element |
 
 
 ## Demos

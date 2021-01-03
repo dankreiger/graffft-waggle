@@ -41,9 +41,9 @@ type ContainerMaxWidths = {
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| `breakpoints` | `Breakpoints` | `defaultBreakpoints`  | object of breakpoints, see `@graffft-waggle/media-query` for `defaultBreakpoints` value |
-| `containerMaxWidths` | `ContainerMaxWidths` | `defaultContainerMaxWidths`  | object of container max-widths, see `@graffft-waggle/container` for `defaultContainerMaxWidths` value |
-| `customScss` | `string` | `''`  | custom scss |
+| `breakpoints`|`Breakpoints`|`defaultBreakpoints`  | object of breakpoints, see `@graffft-waggle/media-query` for `defaultBreakpoints` value |
+| `containerMaxWidths`|`ContainerMaxWidths`|`defaultContainerMaxWidths`  | object of container max-widths, see `@graffft-waggle/container` for `defaultContainerMaxWidths` value |
+| `customScss`|`string`|`''`  | custom scss |
 
 
 ## Demos

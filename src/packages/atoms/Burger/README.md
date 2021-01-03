@@ -26,8 +26,8 @@ import { Burger } from '@graffft-waggle/burger';
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| `burgerColor` | `string` | `'#000'`  | The color of the burger menu |
-| `onClick` | `() => void` | `() => {}`  | Function to be called when burger menu is clicked |
+| `burgerColor`|`string`|`'#000'`  | The color of the burger menu |
+| `onClick`|`() => void`|`() => {}`  | Function to be called when burger menu is clicked |
 
 
 ## Demos
