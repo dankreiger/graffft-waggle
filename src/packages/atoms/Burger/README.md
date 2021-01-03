@@ -19,15 +19,15 @@ import { Burger } from '@graffft-waggle/burger';
 
 | Name | Type | Description |
 |:-----|:-----|:------------|
-| isOpen | `boolean` | The open state of the burger menu (`true` if open). |
+| isOpen |`boolean`| The open state of the burger menu (`true` if open). |
 
 
 ## Optional Props
 
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| `burgerColor`|`string`|`'#000'`  | The color of the burger menu |
-| `onClick`|`() => void`|`() => {}`  | Function to be called when burger menu is clicked |
+|`burgerColor`|`string`|`'#000'`  | The color of the burger menu |
+|`onClick`|`() => void`|`() => {}`  | Function to be called when burger menu is clicked |
 
 
 ## Demos
