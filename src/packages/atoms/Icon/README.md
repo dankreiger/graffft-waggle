@@ -16,9 +16,9 @@ import { Icon } from '@graffft-waggle/icon';
 
 ## Required Props
 
-| Name  | Type                                                                                                                                                                                            | Description                                                            |
-| :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- |
-| title | `"github"|"linkedin"|"codepen"|"stackoverflow"|"gmail"|"gatsby"|"php"|"wordpress"|"angular"|"react"|"css"|"html"|"docker"|"k8s"|"ruby"|"jest"|"python"|"javascript"|"redux"|"typescript"|"git"` | The name of the icon. This text is also used in the svg `<title>` tag. |
+| Name  | Type                                                                                                                                                                                                                | Description                                                            |
+| :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------- |
+| title | `"github"\|"linkedin"\|"codepen"\|"stackoverflow"\|"gmail"\|"gatsby"\|"php"\|"wordpress"\|"angular"\|"react"\|"css"\|"html"\|"docker"\|"k8s"\|"ruby"\|"jest"\|"python"\|"javascript"\|"redux"\|"typescript"\|"git"` | The name of the icon. This text is also used in the svg `<title>` tag. |
 
 ## Optional Props
 

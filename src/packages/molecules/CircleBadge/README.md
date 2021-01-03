@@ -16,9 +16,9 @@ import { CircleBadge } from '@graffft-waggle/circle-badge';
 
 ## Required Props
 
-| Name     | Type                        | Description                                 |
-| :------- | :-------------------------- | :------------------------------------------ |
-| children | `JSX.Element|string|number` | Content that can go inside the circle badge |
+| Name     | Type                          | Description                                 |
+| :------- | :---------------------------- | :------------------------------------------ |
+| children | `JSX.Element\|string\|number` | Content that can go inside the circle badge |
 
 ## Optional Props
 
