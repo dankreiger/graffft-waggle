@@ -5,6 +5,3 @@
 repo of isolated components managed by lerna
 
 [demo](https://sad-neumann-b6f24a.netlify.app/)
-
-
-

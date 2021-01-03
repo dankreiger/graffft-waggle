@@ -12,23 +12,20 @@ The API documentation of the Burger `Graffft Waggle` component.
 import { Burger } from '@graffft-waggle/burger';
 ```
 
-
 ## Burger
 
 ## Required Props
 
-| Name | Type | Description |
-|:-----|:-----|:------------|
-| isOpen |`boolean`| The open state of the burger menu (`true` if open). |
-
+| Name   | Type      | Description                                         |
+| :----- | :-------- | :-------------------------------------------------- |
+| isOpen | `boolean` | The open state of the burger menu (`true` if open). |
 
 ## Optional Props
 
-| Name | Type | Default | Description |
-|:-----|:-----|:--------|:------------|
-|`burgerColor`|`string`|`'#000'`  | The color of the burger menu |
-|`onClick`|`() => void`|`() => {}`  | Function to be called when burger menu is clicked |
-
+| Name          | Type         | Default    | Description                                       |
+| :------------ | :----------- | :--------- | :------------------------------------------------ |
+| `burgerColor` | `string`     | `'#000'`   | The color of the burger menu                      |
+| `onClick`     | `() => void` | `() => {}` | Function to be called when burger menu is clicked |
 
 ## Demos
 
