@@ -106,7 +106,7 @@
     "lerna": "3.22.1",
     "lint-staged": "10.5.4",
     "minimist": "1.2.5",
-    "prettier": "2.2.1",
+    "prettier": "2.3.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-router-dom": "5.2.0",
