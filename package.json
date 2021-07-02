@@ -98,7 +98,7 @@
     "@types/react": "16.14.10",
     "@types/react-dom": "16.9.13",
     "@types/react-router-dom": "5.1.7",
-    "@types/styled-components": "5.1.10",
+    "@types/styled-components": "5.1.11",
     "babel-loader": "8.2.2",
     "cypress": "4.12.1",
     "husky": "4.3.8",
