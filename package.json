@@ -75,8 +75,8 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "9.1.2",
-    "@commitlint/config-conventional": "9.1.2",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
     "@rollup/plugin-commonjs": "13.0.2",
     "@rollup/plugin-node-resolve": "8.4.0",
     "@storybook/addon-a11y": "6.3.4",
