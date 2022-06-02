@@ -99,7 +99,7 @@
     "@types/react-dom": "16.9.16",
     "@types/react-router-dom": "5.3.3",
     "@types/styled-components": "5.1.25",
-    "babel-loader": "8.2.3",
+    "babel-loader": "8.2.5",
     "cypress": "4.12.1",
     "husky": "4.3.8",
     "jest": "26.6.3",
