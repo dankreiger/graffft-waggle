@@ -25,7 +25,7 @@ Click on the package you need to view installation instructions.
 | Molecules                                                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`@graffft-waggle/card`](https://github.com/dankreiger/graffft-waggle/tree/master/src/packages/molecules/Card#readme)                             |
-| [`@graffft-waggle/circle-badge`](https://github.com/dankreiger/graffft-waggle/tree/master/src/packages/molecules/CircleBadger#readme)             |
+| [`@graffft-waggle/circle-badge`](https://github.com/dankreiger/graffft-waggle/tree/master/src/packages/molecules/CircleBadge#readme)              |
 | [`@graffft-waggle/expandable-side-nav`](https://github.com/dankreiger/graffft-waggle/tree/master/src/packages/molecules/ExpandableSideNav#readme) |
 | [`@graffft-waggle/simple-footer`](https://github.com/dankreiger/graffft-waggle/tree/master/src/packages/molecules/SimpleFooter#readme)            |
 | [`@graffft-waggle/social-banner`](https://github.com/dankreiger/graffft-waggle/tree/master/src/packages/molecules/SocialBanner#readme)            |
