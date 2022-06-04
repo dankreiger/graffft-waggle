@@ -17,8 +17,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "declaration": false /* Generates corresponding '.d.ts' file. */
+    "jsx": "react-jsx",
+    "declaration": false,
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
     "src"
