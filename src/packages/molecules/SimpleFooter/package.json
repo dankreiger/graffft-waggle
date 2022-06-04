@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/simple-footer",
-  "version": "0.0.4-alpha.3",
+  "version": "0.0.4-alpha.4",
   "description": "graffft-waggle: a simple-footer component",
   "keywords": [
     "simple-footer"
@@ -38,7 +38,7 @@
     "styled-components": "^5.1.1"
   },
   "dependencies": {
-    "@graffft-waggle/container": "^0.0.4-alpha.3"
+    "@graffft-waggle/container": "^0.0.4-alpha.4"
   },
   "gitHead": "3aad81a35129708683681bec3d88af3c770770d2"
 }
