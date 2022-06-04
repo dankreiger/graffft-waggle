@@ -1,4 +1,4 @@
-import { ContainerMaxWidths } from './types/Container.types';
+import { ContainerMaxWidths } from './Container.types';
 
 export const defaultContainerMaxWidths: ContainerMaxWidths = {
   sm: 540,

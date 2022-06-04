@@ -17,14 +17,11 @@ const horrible = 'lib/packages';
     if (bad) {
       try {
         const garbagecode = good.split(horrible)[0];
-        const iwanttocry = `${garbagecode}/lib/types/`;
+        const iwanttocry = `${garbagecode}/lib/`;
 
         if (!existsSync(iwanttocry)) await mkdir(iwanttocry);
 
         await exec(`cp ${f} ${iwanttocry}`);
-        if (existsSync(`${iwanttocry}/index.d.ts`)) {
-          await exec(`mv ${iwanttocry}/index.d.ts ${garbagecode}/lib/`);
-        }
 
         await rm(f);
       } catch (err) {

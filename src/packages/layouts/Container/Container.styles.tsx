@@ -1,11 +1,10 @@
+import { Breakpoint, defaultBreakpoints } from '@graffft-waggle/media-query';
 import styled from 'styled-components';
-import {
-  ContainerStProps,
-  ContainerGeneratorProps,
-} from './types/Container.interfaces';
-import { Breakpoint } from '@graffft-waggle/media-query';
 import { defaultContainerMaxWidths } from './Container.constants';
-import { defaultBreakpoints } from '@graffft-waggle/media-query';
+import {
+  ContainerGeneratorProps,
+  ContainerStProps,
+} from './Container.interfaces';
 
 export const generateContainerCss = ({
   containerMaxWidths = defaultContainerMaxWidths,
