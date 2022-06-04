@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/card",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.4-alpha.1",
   "description": "graffft-waggle: a card component",
   "keywords": [
     "card"
@@ -33,7 +33,7 @@
     "url": "https://github.com/dankreiger/graffft-waggle/issues"
   },
   "dependencies": {
-    "@graffft-waggle/image": "^0.0.3-alpha.0"
+    "@graffft-waggle/image": "^0.0.4-alpha.1"
   },
   "peerDependencies": {
     "react": "^16.13.1",
