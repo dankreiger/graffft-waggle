@@ -1,8 +1,8 @@
 import { fireEvent, render } from '@testing-library/react';
 import * as React from 'react';
 import { Kopf } from '../Kopf';
-import { KopfHeaderLogoPostion } from '../types/Kopf.enums';
-import { KopfProps } from '../types/Kopf.interfaces';
+import { KopfHeaderLogoPostion } from '../Kopf.enums';
+import { KopfProps } from '../Kopf.interfaces';
 
 const props: KopfProps = {
   headerLogo: (

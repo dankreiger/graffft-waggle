@@ -1,6 +1,8 @@
 import { Burger } from '@graffft-waggle/burger';
 import { ExpandableSideNav } from '@graffft-waggle/expandable-side-nav';
 import * as React from 'react';
+import { KopfHeaderLogoPostion } from './Kopf.enums';
+import { KopfHeaderNavItem, KopfProps } from './Kopf.interfaces';
 import {
   KopfContainerSt,
   KopfHeaderMobileButtonSt,
@@ -11,8 +13,6 @@ import {
   KopfSpacerSt,
   KopfWrapperSt,
 } from './Kopf.styles';
-import { KopfHeaderLogoPostion } from './types/Kopf.enums';
-import { KopfHeaderNavItem, KopfProps } from './types/Kopf.interfaces';
 
 const defaultHeaderLogoPosition = KopfHeaderLogoPostion.RIGHT;
 

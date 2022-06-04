@@ -1,13 +1,13 @@
-import styled, { css } from 'styled-components';
-import {
-  KopfWrapperStProps,
-  KopfInnerWrapperStProps,
-  KopfHeaderNavItemStProps,
-  KopfHeaderMobileButtonStProps,
-  KopfContainerStProps,
-} from './types/Kopf.interfaces';
-import { KopfHeaderLogoPostion } from './types/Kopf.enums';
 import { generateContainerCss } from '@graffft-waggle/container';
+import styled, { css } from 'styled-components';
+import { KopfHeaderLogoPostion } from './Kopf.enums';
+import {
+  KopfContainerStProps,
+  KopfHeaderMobileButtonStProps,
+  KopfHeaderNavItemStProps,
+  KopfInnerWrapperStProps,
+  KopfWrapperStProps,
+} from './Kopf.interfaces';
 
 const setPosition = ({ isFixed }: { isFixed: boolean }) => {
   if (isFixed) {

@@ -1,14 +1,14 @@
-import React, { useState, useCallback } from 'react';
-import { Kopf } from './Kopf';
-import { KopfProps, KopfHeaderNavItem } from './types/Kopf.interfaces';
+import { Container } from '@graffft-waggle/container';
+import { IconType } from '@graffft-waggle/icon';
 import {
   SocialBanner,
   SocialBannerDirection,
 } from '@graffft-waggle/social-banner';
-import { IconType } from '@graffft-waggle/icon';
 import { Colors } from '@graffft-waggle/themes-portfolio';
-import { Container } from '@graffft-waggle/container';
+import React, { useCallback, useState } from 'react';
 import { useNoStoryBookStyle } from '../../../helpers/story-hooks';
+import { Kopf } from './Kopf';
+import { KopfHeaderNavItem, KopfProps } from './Kopf.interfaces';
 
 export default {
   title: 'Organisms/Kopf',
@@ -85,11 +85,8 @@ const useMenuToggler = () => {
 };
 
 export const Basic = (args: KopfProps) => {
-  const {
-    handleToggleMobileMenu,
-    handleCloseMobileMenu,
-    mobileMenuOpen,
-  } = useMenuToggler();
+  const { handleToggleMobileMenu, handleCloseMobileMenu, mobileMenuOpen } =
+    useMenuToggler();
 
   useNoStoryBookStyle();
 
