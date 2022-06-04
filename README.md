@@ -1,5 +1,9 @@
 ## Graffft Waggle
 
+### TODO:
+
+This setup is old. I'll move it to https://github.com/barking-welpe/ui
+
 ![CI](https://github.com/dankreiger/graffft-waggle/workflows/CI/badge.svg)
 
 repo of isolated components managed by lerna
