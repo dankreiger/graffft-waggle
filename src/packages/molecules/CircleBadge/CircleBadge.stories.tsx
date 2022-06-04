@@ -1,7 +1,7 @@
-import React from 'react';
-import { CircleBadgeProps } from './types/CircleBadge.interfaces';
+import { Icon, IconMap, IconType } from '@graffft-waggle/icon';
+import * as React from 'react';
 import { CircleBadge } from './CircleBadge';
-import { Icon, IconType, IconMap } from '@graffft-waggle/icon';
+import { CircleBadgeProps } from './types/CircleBadge.interfaces';
 
 export default {
   title: 'Molecules/CircleBadge',

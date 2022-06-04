@@ -1,10 +1,9 @@
-import React from 'react';
-
+import React, { FC } from 'react';
 import { IconMap } from './constants';
-import { IconProps } from './types/Icon.interfaces';
 import { IconType } from './types/Icon.enums';
+import { IconProps } from './types/Icon.interfaces';
 
-const Icon: React.FC<IconProps> = ({
+const Icon: FC<IconProps> = ({
   title,
   color = '#000',
   size = '24px',

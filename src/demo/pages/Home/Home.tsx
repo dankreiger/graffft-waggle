@@ -1,27 +1,20 @@
-import React from 'react';
 import { CircleBadge } from '@graffft-waggle/circle-badge';
+import { Container } from '@graffft-waggle/container';
 import { Icon, IconMap } from '@graffft-waggle/icon';
+import { Image } from '@graffft-waggle/image';
 import { SocialBanner } from '@graffft-waggle/social-banner';
+import * as React from 'react';
+// import { Card } from '@graffft-waggle/card';
+import { currentTechIcons, socialLinks } from './constants';
 import {
   HeroContainerSt,
+  HomeHeroImageBlockWrapperSt,
+  HomeHeroLeadTextSt,
+  HomeHeroSubTextSt,
   HomeHeroTextWrapperSt,
   HomeSocialContactWrapperSt,
   SectionHomeTechStackModuleWrapperSt,
-  HomeHeroLeadTextSt,
-  HomeHeroSubTextSt,
-  HomeHeroImageBlockWrapperSt,
-  // HomeHeroProjectsSectionSt,
-  // HomeHeroProjectsTitleSectionSt,
 } from './Home.styles';
-import { Image } from '@graffft-waggle/image';
-// import { Card } from '@graffft-waggle/card';
-
-import {
-  currentTechIcons,
-  socialLinks,
-  // dummyCardProps
-} from './constants';
-import { Container } from '@graffft-waggle/container';
 
 const synth = window.speechSynthesis;
 const saySomething = (text: string) => () => {

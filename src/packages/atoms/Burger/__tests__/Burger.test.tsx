@@ -1,8 +1,7 @@
-import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
-
-import { BurgerProps } from '../types/Burger.interfaces';
+import { fireEvent, render } from '@testing-library/react';
+import * as React from 'react';
 import { Burger } from '../Burger';
+import { BurgerProps } from '../types/Burger.interfaces';
 
 const props: BurgerProps = {
   isOpen: false,

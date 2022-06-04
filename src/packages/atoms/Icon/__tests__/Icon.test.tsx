@@ -1,6 +1,6 @@
-import React from 'react';
-import { Icon } from '../Icon';
 import { render } from '@testing-library/react';
+import * as React from 'react';
+import { Icon } from '../Icon';
 import { IconType } from '../types/Icon.enums';
 import { IconProps } from '../types/Icon.interfaces';
 

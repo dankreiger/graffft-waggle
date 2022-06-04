@@ -1,6 +1,6 @@
-import React from 'react';
-import { SocialBanner } from './index';
 import { IconType } from '@graffft-waggle/icon';
+import * as React from 'react';
+import { SocialBanner } from './index';
 import { SocialBannerDirection } from './types/SocialBanner.enums';
 import { SocialBannerProps } from './types/SocialBanner.interfaces';
 

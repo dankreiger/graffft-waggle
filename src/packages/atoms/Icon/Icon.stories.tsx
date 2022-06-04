@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { Icon } from './index';
-import { IconProps } from './types/Icon.interfaces';
 import { IconType } from './types/Icon.enums';
+import { IconProps } from './types/Icon.interfaces';
 
 export default {
   title: 'Atoms/Icon',
