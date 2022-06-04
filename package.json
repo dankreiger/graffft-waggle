@@ -25,7 +25,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "eject": "react-scripts eject",
-    "release": "standard-version && yarn build && yarn release:publish && yarn build-storybook && echo 'todo: add deploy script' ",
+    "release": "standard-version && yarn build && yarn release:publish -y && yarn build-storybook && echo 'todo: add deploy script' ",
     "release:prerelease": "yarn build && yarn lerna publish --conventional-prerelease --pre-dist-tag next --yes",
     "release:publish": "yarn lerna publish --conventional-commits",
     "start": "react-scripts start",
