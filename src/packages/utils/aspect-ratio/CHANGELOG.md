@@ -5,8 +5,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.0.4-alpha.2](https://github.com/dankreiger/graffft-waggle/compare/v0.0.4-alpha.1...v0.0.4-alpha.2) (2022-06-04)
 
-**Note:** Version bump only for package @graffft-waggle/kopf
+### Bug Fixes
 
-## [0.0.4-alpha.1](https://github.com/dankreiger/graffft-waggle/compare/v0.0.4-alpha.0...v0.0.4-alpha.1) (2022-06-04)
-
-**Note:** Version bump only for package @graffft-waggle/kopf
+- readme ([#307](https://github.com/dankreiger/graffft-waggle/issues/307)) ([b8053fe](https://github.com/dankreiger/graffft-waggle/commit/b8053fe233881cc0fccedf8a8a0deafddfe90842))
