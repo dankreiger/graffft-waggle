@@ -1,20 +1,20 @@
-import React from 'react';
-import { CardProps } from './types/Card.interfaces';
-import {
-  CardWrapperSt,
-  CardTitleSt,
-  CardYearSt,
-  CardSubtitleSt,
-  CardImageSt,
-  CardSubCategorySt,
-  CardCategorySt,
-  CardButtonSt,
-} from './Card.styles';
 import { Image } from '@graffft-waggle/image';
 import { defaultBreakpoints } from '@graffft-waggle/media-query';
+import React, { FC } from 'react';
+import {
+  CardButtonSt,
+  CardCategorySt,
+  CardImageSt,
+  CardSubCategorySt,
+  CardSubtitleSt,
+  CardTitleSt,
+  CardWrapperSt,
+  CardYearSt,
+} from './Card.styles';
+import { CardProps } from './types/Card.interfaces';
 
 // ROUGH DRAFT ATTEMPT WITH CSS GRID
-export const Card: React.FC<CardProps> = ({
+export const Card: FC<CardProps> = ({
   title,
   subtitle,
   year,

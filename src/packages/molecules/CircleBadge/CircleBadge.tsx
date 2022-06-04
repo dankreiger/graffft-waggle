@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { CircleBadgeWrapperSt } from './CircleBadge.styles';
 import { CircleBadgeProps } from './types/CircleBadge.interfaces';
 

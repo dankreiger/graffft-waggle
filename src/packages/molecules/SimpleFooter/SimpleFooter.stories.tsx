@@ -1,12 +1,12 @@
-import React from 'react';
+import { Container } from '@graffft-waggle/container';
+import { Colors } from '@graffft-waggle/themes-portfolio';
+import * as React from 'react';
+import {
+  useFullHeightRootElement,
+  useNoStoryBookStyle,
+} from '../../../helpers/story-hooks';
 import { SimpleFooter } from './SimpleFooter';
 import { SimpleFooterProps } from './types/SimpleFooter.interfaces';
-import { Colors } from '@graffft-waggle/themes-portfolio';
-import {
-  useNoStoryBookStyle,
-  useFullHeightRootElement,
-} from '../../../helpers/story-hooks';
-import { Container } from '@graffft-waggle/container';
 
 export default {
   title: 'Molecules/SimpleFooter',

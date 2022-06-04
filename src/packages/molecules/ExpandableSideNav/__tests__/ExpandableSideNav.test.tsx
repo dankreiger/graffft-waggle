@@ -1,5 +1,5 @@
-import React from 'react';
-import { render, getAllByTestId } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import * as React from 'react';
 import { ExpandableSideNav } from '../ExpandableSideNav';
 
 describe('ExpandableSideNav', () => {

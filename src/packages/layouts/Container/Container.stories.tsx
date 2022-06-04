@@ -1,7 +1,7 @@
-import React from 'react';
-import { ContainerStProps } from './types/Container.interfaces';
-import { Container } from './Container.styles';
+import * as React from 'react';
 import { useNoStoryBookStyle } from '../../../helpers/story-hooks';
+import { Container } from './Container.styles';
+import { ContainerStProps } from './types/Container.interfaces';
 
 export default {
   title: 'Layouts/Container',

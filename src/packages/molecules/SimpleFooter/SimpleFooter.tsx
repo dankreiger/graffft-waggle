@@ -1,14 +1,14 @@
-import React from 'react';
-import { SimpleFooterProps } from './types/SimpleFooter.interfaces';
 import { Container } from '@graffft-waggle/container';
-import {
-  SimpleFooterWrapperSt,
-  SimpleFooterContentWrapperSt,
-  SimpleFooterItemsWrapperSt,
-  SimpleFooterItemSt,
-  SimpleFooterCopyrightTextSt,
-} from './SimpleFooter.styles';
 import { NavItem } from '@graffft-waggle/expandable-side-nav';
+import * as React from 'react';
+import {
+  SimpleFooterContentWrapperSt,
+  SimpleFooterCopyrightTextSt,
+  SimpleFooterItemSt,
+  SimpleFooterItemsWrapperSt,
+  SimpleFooterWrapperSt,
+} from './SimpleFooter.styles';
+import { SimpleFooterProps } from './types/SimpleFooter.interfaces';
 
 export const SimpleFooter: React.FC<SimpleFooterProps> = ({
   footerCopyrightText = new Date().getFullYear(),
