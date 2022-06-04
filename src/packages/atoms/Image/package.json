@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/image",
-  "version": "0.0.4-alpha.2",
+  "version": "0.0.4-alpha.3",
   "description": "graffft-waggle: a image component",
   "keywords": [
     "image"
@@ -33,7 +33,7 @@
     "url": "https://github.com/dankreiger/graffft-waggle/issues"
   },
   "dependencies": {
-    "@graffft-waggle/aspect-ratio": "^0.0.4-alpha.2"
+    "@graffft-waggle/aspect-ratio": "^0.0.4-alpha.3"
   },
   "peerDependencies": {
     "react": "^16.13.1",
