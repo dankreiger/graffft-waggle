@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4-alpha.9](https://github.com/dankreiger/graffft-waggle/compare/v0.0.4-alpha.8...v0.0.4-alpha.9) (2022-06-05)
+
+
+### Bug Fixes
+
+* stuff ([f9251c8](https://github.com/dankreiger/graffft-waggle/commit/f9251c88ce411330ab1a9ee6f01084d5ea88bd61))
+* stuff ([d7e9078](https://github.com/dankreiger/graffft-waggle/commit/d7e9078df1606fefb518d06cbbf75c51f631698c))
+* stuff ([ab9d659](https://github.com/dankreiger/graffft-waggle/commit/ab9d6596d86d716ca2ed298db8105016fe7490f4))
+
+
+
+
+
 ## [0.0.4-alpha.8](https://github.com/dankreiger/graffft-waggle/compare/v0.0.4-alpha.7...v0.0.4-alpha.8) (2022-06-05)
 
 

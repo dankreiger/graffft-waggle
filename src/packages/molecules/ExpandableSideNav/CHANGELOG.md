@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4-alpha.9](https://github.com/dankreiger/graffft-waggle/compare/v0.0.4-alpha.8...v0.0.4-alpha.9) (2022-06-05)
+
+
+### Bug Fixes
+
+* stuff ([d7e9078](https://github.com/dankreiger/graffft-waggle/commit/d7e9078df1606fefb518d06cbbf75c51f631698c))
+
+
+
+
+
 ## [0.0.4-alpha.8](https://github.com/dankreiger/graffft-waggle/compare/v0.0.4-alpha.7...v0.0.4-alpha.8) (2022-06-05)
 
 **Note:** Version bump only for package @graffft-waggle/expandable-side-nav
