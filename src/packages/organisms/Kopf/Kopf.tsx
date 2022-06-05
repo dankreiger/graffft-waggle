@@ -1,6 +1,7 @@
 import { Burger } from '@graffft-waggle/burger';
 import { ExpandableSideNav } from '@graffft-waggle/expandable-side-nav';
 import * as React from 'react';
+import { useMenuToggler } from './hooks';
 import { KopfHeaderLogoPostion } from './Kopf.enums';
 import { KopfHeaderNavItem, KopfProps } from './Kopf.interfaces';
 import {
@@ -16,7 +17,7 @@ import {
 
 const defaultHeaderLogoPosition = KopfHeaderLogoPostion.RIGHT;
 
-export const Kopf: React.FC<KopfProps> = ({
+const KopfCmp: React.FC<KopfProps> = ({
   desktopMinWidth = 768,
   headerBackgroundColor = '#fff',
   isFixed = true,
@@ -103,4 +104,17 @@ export const Kopf: React.FC<KopfProps> = ({
       {isFixed && <KopfSpacerSt headerHeight={headerHeight} />}
     </>
   );
+};
+
+export const Kopf: React.FC<KopfProps> = (props) => {
+  let menuProps;
+  const extra = useMenuToggler();
+  if (
+    !props.handleToggleMobileMenu &&
+    !props.mobileMenuOpen &&
+    !props.handleCloseMobileMenu
+  ) {
+    menuProps = extra;
+  }
+  return <KopfCmp {...props} {...menuProps} />;
 };

@@ -6,7 +6,7 @@ import {
   ContainerStProps,
 } from './Container.interfaces';
 
-export const generateContainerCss = ({
+export const _generateContainerCss = ({
   containerMaxWidths = defaultContainerMaxWidths,
   breakpoints = defaultBreakpoints,
   fullHeight = false,
@@ -37,10 +37,11 @@ export const generateContainerCss = ({
   return css;
 };
 
-const ContainerSt = styled.div<ContainerStProps>`
-  ${generateContainerCss as (props: ContainerGeneratorProps) => string}
+export const ContainerSt = styled.div<ContainerStProps>`
+  ${_generateContainerCss as (props: ContainerGeneratorProps) => string}
 
   ${({ customScss }) => customScss};
 `;
 
 export const Container = ContainerSt;
+export const generateContainerCss = _generateContainerCss;
