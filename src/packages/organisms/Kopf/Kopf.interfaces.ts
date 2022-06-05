@@ -114,12 +114,15 @@ export interface KopfProps extends ExpandableSideNavProps {
    */
   headerZIndex?: number;
 
+  /**
+   * @default defaultContainerMaxWidths
+   */
   containerMaxWidths?: ContainerMaxWidths;
   breakpoints?: Breakpoints;
 
   /**
    * custom scss for wrapper element
-   * @default '''
+   * @default ''
    */
   customScss?: string;
 }

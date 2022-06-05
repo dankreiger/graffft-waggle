@@ -1,3 +1,4 @@
+export { defaultContainerMaxWidths } from './Container.constants';
 export type {
   ContainerGeneratorProps,
   ContainerStProps,

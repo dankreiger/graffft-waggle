@@ -1,4 +1,5 @@
 import { Burger } from '@graffft-waggle/burger';
+import { defaultContainerMaxWidths } from '@graffft-waggle/container';
 import { ExpandableSideNav } from '@graffft-waggle/expandable-side-nav';
 import * as React from 'react';
 import { useKopfDefaults } from './hooks';
@@ -39,7 +40,7 @@ const KopfCmp: React.FC<KopfProps> = ({
   handleToggleMobileMenu = () => {},
   handleCloseMobileMenu = () => {},
   customScss = '',
-  containerMaxWidths,
+  containerMaxWidths = defaultContainerMaxWidths,
   breakpoints,
   ...restSideNavProps
 }) => {

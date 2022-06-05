@@ -35,7 +35,8 @@
   "dependencies": {
     "@graffft-waggle/burger": "^0.0.4-alpha.8",
     "@graffft-waggle/container": "^0.0.4-alpha.8",
-    "@graffft-waggle/expandable-side-nav": "^0.0.4-alpha.13"
+    "@graffft-waggle/expandable-side-nav": "^0.0.4-alpha.13",
+    "usehooks-ts": "^2.5.4"
   },
   "peerDependencies": {
     "react": "16.14.0",
