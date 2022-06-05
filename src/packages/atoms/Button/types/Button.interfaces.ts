@@ -9,6 +9,8 @@ export interface ButtonProps {
    * @default '1px'
    */
   borderWidth?: string;
+  buttonHeight?: string;
+  buttonWidth?: string;
   /**
    * content in button
    */

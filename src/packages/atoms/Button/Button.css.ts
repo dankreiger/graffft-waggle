@@ -69,6 +69,7 @@ export const ButtonSt = styled.button<ButtonProps>`
     css`
       border: ${borderWidth} solid ${rest[variant]};
       background-color: transparent;
+      color: rest[variant];
 
       &:hover {
         background-color: transparent;
@@ -101,7 +102,9 @@ export const ButtonSt = styled.button<ButtonProps>`
 
 
 
-  min-height: ${({ minHeight }) => minHeight || '55px'};
+    min-height: ${({ minHeight }) => minHeight || '55px'};
+  height: ${({ buttonHeight }) => buttonHeight};
+  width: ${({ buttonWidth }) => buttonWidth};
   border-radius: 5px;
   padding: ${({ padding }) => padding || '8px 16px'};
   transition: all 0.2s ease-in-out;

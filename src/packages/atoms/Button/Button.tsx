@@ -9,10 +9,13 @@ export const Button: React.FC<ButtonProps> = ({
   activeColor,
   activeBackgroundColor,
   borderWidth = '1px',
+  buttonHeight = 'auto',
+  buttonWidth = 'auto',
   children,
   disabled,
   isSelected = false,
   isOutline,
+  minHeight,
   onClick = () => undefined,
   padding,
   primary,
@@ -25,6 +28,8 @@ export const Button: React.FC<ButtonProps> = ({
       activeBackgroundColor={activeBackgroundColor}
       isSelected={isSelected}
       borderWidth={borderWidth}
+      buttonWidth={buttonWidth}
+      minHeight={minHeight}
       disabled={disabled}
       onClick={onClick}
       isOutline={isOutline}
