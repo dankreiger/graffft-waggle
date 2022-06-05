@@ -62,9 +62,12 @@ const KopfCmp: React.FC<KopfProps> = ({
             headerMobilePadding={headerMobilePadding}
             headerPadding={headerPadding}
           >
-            <KopfLogoSt>{headerLogo}</KopfLogoSt>
+            <KopfLogoSt headerLogoPosition={headerLogoPosition}>
+              {headerLogo}
+            </KopfLogoSt>
             <KopfHeaderNavItemsSt
               desktopMinWidth={desktopMinWidth}
+              headerLogoPosition={headerLogoPosition}
               headerNavItemHorizontalPadding={headerNavItemHorizontalPadding}
             >
               {headerNavItems.map((navProps: KopfHeaderNavItem) => (

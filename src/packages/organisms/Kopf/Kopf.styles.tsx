@@ -60,24 +60,33 @@ export const KopfInnerWrapperSt = styled.div<KopfInnerWrapperStProps>`
     }
   `}
 `;
-export const KopfLogoSt = styled.div.attrs({
+export const KopfLogoSt = styled.div.attrs((props) => ({
   'data-testid': 'Kopf logo',
-})`
+  ...props,
+}))`
   display: flex;
   align-items: center;
   height: 100%;
+  order: ${(props: { headerLogoPosition: KopfHeaderLogoPostion }) =>
+    props.headerLogoPosition === KopfHeaderLogoPostion.LEFT ? '-1' : '1'};
 `;
 
 export const KopfHeaderNavItemsSt = styled.div<{
   headerNavItemHorizontalPadding: string;
+  headerLogoPosition: KopfHeaderLogoPostion;
   desktopMinWidth: number;
 }>`
   display: none;
 
   align-items: center;
   height: 100%;
-  transform: ${({ headerNavItemHorizontalPadding }) =>
-    `translateX(${headerNavItemHorizontalPadding})`};
+
+  transform: ${({ headerNavItemHorizontalPadding, headerLogoPosition }) =>
+    `translateX(${
+      headerLogoPosition === KopfHeaderLogoPostion.LEFT
+        ? headerNavItemHorizontalPadding
+        : `-${headerNavItemHorizontalPadding}`
+    })`};
   ${({ desktopMinWidth }) => `
     @media (min-width: ${desktopMinWidth}px) {
       display: flex;
