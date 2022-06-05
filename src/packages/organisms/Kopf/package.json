@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/kopf",
-  "version": "0.0.4-alpha.13",
+  "version": "0.0.4-alpha.14",
   "description": "graffft-waggle: a kopf component",
   "keywords": [
     "kopf"
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@graffft-waggle/burger": "^0.0.4-alpha.8",
-    "@graffft-waggle/container": "^0.0.4-alpha.8",
+    "@graffft-waggle/container": "^0.0.4-alpha.14",
     "@graffft-waggle/expandable-side-nav": "^0.0.4-alpha.13",
     "usehooks-ts": "^2.5.4"
   },
