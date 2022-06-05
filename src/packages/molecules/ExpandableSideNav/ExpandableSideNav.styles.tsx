@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import {
-  ExpandableSideNavWrapperStProps,
   ExpandableSideNavContentWrapperStProps,
   ExpandableSideNavItemStProps,
+  ExpandableSideNavWrapperStProps,
 } from './types/ExpandableSideNav.interfaces';
 
 const getOverlay = ({
@@ -27,11 +27,11 @@ const getOverlay = ({
   }
 `;
 
-export const ExpandableSideNavWrapperSt = styled.div.attrs<
-  ExpandableSideNavWrapperStProps
->(({ isExpanded }) => ({
-  tabIndex: isExpanded ? '-1' : undefined,
-}))<ExpandableSideNavWrapperStProps>`
+export const ExpandableSideNavWrapperSt = styled.div.attrs<ExpandableSideNavWrapperStProps>(
+  ({ isExpanded }) => ({
+    tabIndex: isExpanded ? '-1' : undefined,
+  })
+)<ExpandableSideNavWrapperStProps>`
   position: fixed;
   left: 0;
   top: 0;
@@ -57,15 +57,13 @@ const getTransform = ({
   return translateXPercentage;
 };
 
-export const ExpandableSideNavContentWrapperSt = styled.div<
-  ExpandableSideNavContentWrapperStProps
->`
+export const ExpandableSideNavContentWrapperSt = styled.div<ExpandableSideNavContentWrapperStProps>`
   position: relative;
   width: 90%;
   max-width: 268px;
   margin-left: ${({ isSetToTheLeftSide }) =>
     isSetToTheLeftSide ? '0px' : 'auto'};
-  background: #fff;
+  background: ${({ expandableSideNavBgColor }) => expandableSideNavBgColor};
   height: 100%;
   box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
   transition: transform 250ms;
@@ -75,18 +73,22 @@ export const ExpandableSideNavContentWrapperSt = styled.div<
   will-change: transform;
 `;
 
-const getSideNavPadding = (isCloseIcon: boolean = false) => ({
-  sideNavItemPadding,
-  isSetToTheLeftSide,
-}: {
-  sideNavItemPadding: string;
-  isSetToTheLeftSide: boolean;
-}) => {
-  if (isSetToTheLeftSide) {
-    return `padding-${isCloseIcon ? 'left' : 'right'}: ${sideNavItemPadding};`;
-  }
-  return `padding-${isCloseIcon ? 'right' : 'left'}: ${sideNavItemPadding};`;
-};
+const getSideNavPadding =
+  (isCloseIcon: boolean = false) =>
+  ({
+    sideNavItemPadding,
+    isSetToTheLeftSide,
+  }: {
+    sideNavItemPadding: string;
+    isSetToTheLeftSide: boolean;
+  }) => {
+    if (isSetToTheLeftSide) {
+      return `padding-${
+        isCloseIcon ? 'left' : 'right'
+      }: ${sideNavItemPadding};`;
+    }
+    return `padding-${isCloseIcon ? 'right' : 'left'}: ${sideNavItemPadding};`;
+  };
 
 export const ExpandableSideNavHeaderSt = styled.div<{
   isSetToTheLeftSide: boolean;

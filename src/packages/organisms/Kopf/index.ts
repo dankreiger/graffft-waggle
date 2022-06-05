@@ -1,5 +1,6 @@
 import { NavItem } from '@graffft-waggle/expandable-side-nav';
 export * from './Kopf';
+export * from './Kopf.enums';
 export * from './Kopf.interfaces';
 
 // used for build script

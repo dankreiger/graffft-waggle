@@ -99,6 +99,7 @@ const KopfCmp: React.FC<KopfProps> = ({
           isExpanded={mobileMenuOpen}
           sideNavItems={sideNavItems}
           sideNavBurgerColor={headerBurgerColor}
+          expandableSideNavBgColor={headerBackgroundColor}
         />
       )}
       {isFixed && <KopfSpacerSt headerHeight={headerHeight} />}
