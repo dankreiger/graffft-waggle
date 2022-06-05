@@ -1,11 +1,12 @@
 import { ContainerMaxWidths } from '@graffft-waggle/container';
 import { NavItem } from '@graffft-waggle/expandable-side-nav';
+import { ExpandableSideNavProps } from '@graffft-waggle/expandable-side-nav/types/ExpandableSideNav.interfaces';
 import { Breakpoints } from '@graffft-waggle/media-query';
 import { KopfHeaderLogoPostion } from './Kopf.enums';
 
 export type KopfHeaderNavItem = NavItem;
 
-export interface KopfProps {
+export interface KopfProps extends ExpandableSideNavProps {
   /**
    * Main header logo
    */

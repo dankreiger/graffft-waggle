@@ -15,7 +15,7 @@ import {
   NavItem,
 } from './types/ExpandableSideNav.interfaces';
 
-const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
+export const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
   sideNavLogo,
   isExpanded = false,
   sideNavItems = [],
@@ -31,7 +31,6 @@ const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
   ariaLabel = 'Expandable Side Navigation',
 }) => {
   const ref = useRef(null);
-
   useOnClickOutside(ref, handleCloseSideNav);
   return (
     <ExpandableSideNavWrapperSt
@@ -85,5 +84,3 @@ const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
     </ExpandableSideNavWrapperSt>
   );
 };
-
-export { ExpandableSideNav };

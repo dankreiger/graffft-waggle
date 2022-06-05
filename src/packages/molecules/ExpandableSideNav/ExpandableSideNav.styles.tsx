@@ -52,7 +52,7 @@ const getTransform = ({
   }
 
   if (isExpanded) {
-    translateXPercentage = 'none';
+    translateXPercentage = 'translateX(0%)';
   }
   return translateXPercentage;
 };
@@ -61,16 +61,16 @@ export const ExpandableSideNavContentWrapperSt = styled.div<ExpandableSideNavCon
   position: relative;
   width: 90%;
   max-width: 268px;
-  margin-left: ${({ isSetToTheLeftSide }) =>
-    isSetToTheLeftSide ? '0px' : 'auto'};
   background: ${({ expandableSideNavBgColor }) => expandableSideNavBgColor};
   height: 100%;
-  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 0 12px rgb(0, 0, 0);
   transition: transform 250ms;
   transform: ${getTransform};
   display: flex;
   flex-direction: column;
   will-change: transform;
+  margin-left: ${({ isSetToTheLeftSide }) =>
+    isSetToTheLeftSide ? '0px' : 'auto'};
 `;
 
 const getSideNavPadding =
@@ -84,7 +84,7 @@ const getSideNavPadding =
   }) => {
     if (isSetToTheLeftSide) {
       return `padding-${
-        isCloseIcon ? 'left' : 'right'
+        isCloseIcon ? 'right' : 'left'
       }: ${sideNavItemPadding};`;
     }
     return `padding-${isCloseIcon ? 'right' : 'left'}: ${sideNavItemPadding};`;
