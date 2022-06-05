@@ -12,10 +12,11 @@ import {
   KopfInnerWrapperSt,
   KopfLogoSt,
   KopfSpacerSt,
-  KopfWrapperSt,
+  KopfWrapperSt
 } from './Kopf.styles';
 
 const defaultHeaderLogoPosition = KopfHeaderLogoPostion.RIGHT;
+export const KopfHeaderNavItemsStTestID = 'desktop-header-nav-items';
 
 const KopfCmp: React.FC<KopfProps> = ({
   desktopMinWidth = 768,
@@ -111,14 +112,24 @@ const KopfCmp: React.FC<KopfProps> = ({
 };
 
 export const Kopf: React.FC<KopfProps> = (props) => {
-  let menuProps;
+  let kopfProps = { ...props };
   const extra = useMenuToggler();
+
+  // if no side nav items (mobile) passed, assign given header nav items to side nav items
+  if (!props.sideNavItems) {
+    kopfProps = {
+      ...kopfProps,
+      sideNavItems: props.headerNavItems,
+    };
+  }
+
+  // if there's no attempt to control the mobile menu, give it sensible defaults
   if (
     !props.handleToggleMobileMenu &&
     !props.mobileMenuOpen &&
     !props.handleCloseMobileMenu
   ) {
-    menuProps = extra;
+    kopfProps = { ...kopfProps, ...extra };
   }
-  return <KopfCmp {...props} {...menuProps} />;
+  return <KopfCmp {...kopfProps} />;
 };

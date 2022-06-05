@@ -1,7 +1,7 @@
-import { KopfHeaderLogoPostion } from './Kopf.enums';
-import { NavItem } from '@graffft-waggle/expandable-side-nav';
 import { ContainerMaxWidths } from '@graffft-waggle/container';
+import { NavItem } from '@graffft-waggle/expandable-side-nav';
 import { Breakpoints } from '@graffft-waggle/media-query';
+import { KopfHeaderLogoPostion } from './Kopf.enums';
 
 export type KopfHeaderNavItem = NavItem;
 
@@ -141,12 +141,18 @@ export interface KopfHeaderMobileButtonStProps {
   desktopMinWidth: number;
   headerLogoPosition: KopfHeaderLogoPostion;
 }
+export interface KopfHeaderNavItemsWrapper {
+  headerNavItemHorizontalPadding: string;
+  headerLogoPosition: KopfHeaderLogoPostion;
+  desktopMinWidth: number;
+}
 export interface KopfHeaderNavItemStProps {
   headerNavItemHorizontalPadding: string;
   headerLogoPosition: KopfHeaderLogoPostion;
   navItemColor?: string;
   navItemHoverColor?: string;
   navItemHoverBgColor?: string;
+  testID?: string;
 }
 
 export interface KopfContainerStProps {

@@ -220,25 +220,8 @@ const argsNoMobileMenuFns: KopfProps = {
     </a>
   ),
   headerBackgroundColor: Colors.Secondary,
-  sideNavItems,
-  headerNavItems: [
-    ...headerNavItems,
-    {
-      navItem: (
-        <>
-          <div style={{ marginLeft: '30px' }} />
-          <SocialBanner
-            buttonLinks={demoLinks}
-            linkSize={30}
-            paddingSize={6}
-            direction={SocialBannerDirection.VERTICAL}
-            customScss={`position: absolute; right: 20px; top: 15px;`}
-          />
-        </>
-      ),
-      key: 'dog',
-    },
-  ],
+  // sideNavItems,
+  headerNavItems: [...headerNavItems],
 };
 
 NoMobileMenuFns.args = argsNoMobileMenuFns;

@@ -1,10 +1,12 @@
 import { generateContainerCss } from '@graffft-waggle/container';
 import styled, { css } from 'styled-components';
+import { KopfHeaderNavItemsStTestID } from './Kopf';
 import { KopfHeaderLogoPostion } from './Kopf.enums';
 import {
   KopfContainerStProps,
   KopfHeaderMobileButtonStProps,
   KopfHeaderNavItemStProps,
+  KopfHeaderNavItemsWrapper,
   KopfInnerWrapperStProps,
   KopfWrapperStProps,
 } from './Kopf.interfaces';
@@ -60,10 +62,7 @@ export const KopfInnerWrapperSt = styled.div<KopfInnerWrapperStProps>`
     }
   `}
 `;
-export const KopfLogoSt = styled.div.attrs((props) => ({
-  'data-testid': 'Kopf logo',
-  ...props,
-}))`
+export const KopfLogoSt = styled.div`
   display: flex;
   align-items: center;
   height: 100%;
@@ -71,23 +70,27 @@ export const KopfLogoSt = styled.div.attrs((props) => ({
     props.headerLogoPosition === KopfHeaderLogoPostion.LEFT ? '-1' : '1'};
 `;
 
-export const KopfHeaderNavItemsSt = styled.div<{
-  headerNavItemHorizontalPadding: string;
-  headerLogoPosition: KopfHeaderLogoPostion;
-  desktopMinWidth: number;
-}>`
+export const KopfHeaderNavItemsSt = styled.div.attrs<KopfHeaderNavItemsWrapper>(
+  (props) => ({
+    'data-testid': KopfHeaderNavItemsStTestID,
+    ...props,
+  })
+)`
   display: none;
 
   align-items: center;
   height: 100%;
 
-  transform: ${({ headerNavItemHorizontalPadding, headerLogoPosition }) =>
+  transform: ${({
+    headerNavItemHorizontalPadding,
+    headerLogoPosition,
+  }: KopfHeaderNavItemsWrapper) =>
     `translateX(${
       headerLogoPosition === KopfHeaderLogoPostion.LEFT
         ? headerNavItemHorizontalPadding
         : `-${headerNavItemHorizontalPadding}`
     })`};
-  ${({ desktopMinWidth }) => `
+  ${({ desktopMinWidth }: KopfHeaderNavItemsWrapper) => `
     @media (min-width: ${desktopMinWidth}px) {
       display: flex;
     }`}

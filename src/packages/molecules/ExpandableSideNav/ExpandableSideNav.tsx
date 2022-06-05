@@ -28,13 +28,14 @@ const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
   handleCloseSideNav = () => {},
   isSetToTheLeftSide = false,
   sideNavBurgerColor = '#000',
+  ariaLabel = 'Expandable Side Navigation',
 }) => {
   const ref = useRef(null);
 
   useOnClickOutside(ref, handleCloseSideNav);
   return (
     <ExpandableSideNavWrapperSt
-      aria-label="Expandable Side Navigation"
+      aria-label={ariaLabel}
       isExpanded={isExpanded}
       expandableSideNavZIndex={expandableSideNavZIndex}
       expandableSideNavBgOverlayColor={expandableSideNavBgOverlayColor}

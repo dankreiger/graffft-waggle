@@ -1,5 +1,10 @@
 export interface ExpandableSideNavProps {
   /**
+   * aria-label for the nav container
+   * @default 'Expandable Side Navigation'
+   */
+  ariaLabel?: string;
+  /**
    * a logo for the side nav header
    * @default undefined
    */

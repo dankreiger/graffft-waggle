@@ -1,6 +1,7 @@
+import { within } from '@testing-library/dom';
 import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
-import { Kopf } from '../Kopf';
+import { Kopf, KopfHeaderNavItemsStTestID } from '../Kopf';
 import { KopfHeaderLogoPostion } from '../Kopf.enums';
 import { KopfProps } from '../Kopf.interfaces';
 
@@ -27,11 +28,15 @@ describe('Kopf', () => {
   });
 
   test('renders header with nav menu and items', async () => {
-    const { findAllByText, getByRole } = render(<Kopf {...props} />);
+    const { getByRole } = render(<Kopf {...props} />);
     const nav = getByRole('navigation');
     expect(nav).toBeTruthy();
+    const container = (await document.querySelector(
+      `[data-testid="${KopfHeaderNavItemsStTestID}"]`
+    )) as HTMLElement;
 
-    const items = await findAllByText(/Item #[0-9]/);
+    const items = await within(container).findAllByText(/Item #[0-9]/);
+
     expect(items).toHaveLength(props.headerNavItems.length);
   });
 
