@@ -100,7 +100,7 @@ export const KopfHeaderNavItemSt = styled.div<KopfHeaderNavItemStProps>`
   display: flex;
   align-items: center;
   height: 100%;
-  transition: background-color 250ms color 250ms;
+  transition: background-color 250ms, color 250ms;
 
   color: ${({ navItemColor }) => navItemColor};
   > * {
