@@ -85,13 +85,21 @@ export const ButtonSt = styled.button<ButtonProps>`
       }
     `}
 
+  ${({ isSelected, activeBackgroundColor }) =>
+    isSelected &&
+    activeBackgroundColor &&
+    css`
+      background-color: ${activeBackgroundColor};
+    `}
 
-    background-color: ${({ activeBackgroundColor, isSelected }) =>
-    isSelected && activeBackgroundColor
-      ? activeBackgroundColor
-      : 'currentColor'};
-  color: ${({ activeColor, isSelected }) =>
-    isSelected && activeColor ? activeColor : 'currentColor'};
+    ${({ isSelected, activeColor }) =>
+    isSelected &&
+    activeColor &&
+    css`
+      background-color: ${activeColor};
+    `}
+
+
 
   min-height: ${({ minHeight }) => minHeight || '55px'};
   border-radius: 5px;

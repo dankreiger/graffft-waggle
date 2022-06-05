@@ -37,3 +37,14 @@ export const Button: React.FC<ButtonProps> = ({
     </ButtonSt>
   );
 };
+
+export const createButton =
+  (variantColors: { primary: string; secondary: string }) =>
+  (props: Omit<ButtonProps, 'primary' | 'secondary'>) =>
+    (
+      <Button
+        {...props}
+        primary={variantColors.primary}
+        secondary={variantColors.secondary}
+      />
+    );
