@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react';
-import { useMediaQuery } from 'usehooks-ts';
 import { KopfHeaderLogoPostion } from './Kopf.enums';
 import { KopfProps } from './Kopf.interfaces';
 
@@ -16,10 +15,6 @@ export const useMenuToggler = () => {
 
 export const useKopfDefaults = (props: KopfProps) => {
   const extra = useMenuToggler();
-
-  const shouldCloseMenu = useMediaQuery(
-    `(min-width: ${props.desktopMinWidth}px)`
-  );
 
   const returnProps = useMemo<KopfProps>(() => {
     let kopfProps: KopfProps = { ...props };
@@ -50,10 +45,6 @@ export const useKopfDefaults = (props: KopfProps) => {
     }
     return kopfProps;
   }, [props, extra]);
-
-  if (shouldCloseMenu) {
-    extra.handleCloseMobileMenu();
-  }
 
   return returnProps;
 };

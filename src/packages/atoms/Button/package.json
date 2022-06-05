@@ -1,9 +1,9 @@
 {
-  "name": "@graffft-waggle/kopf",
-  "version": "0.0.4-alpha.14",
-  "description": "graffft-waggle: a kopf component",
+  "name": "@graffft-waggle/button",
+  "version": "0.0.4-alpha.3",
+  "description": "graffft-waggle: a button component",
   "keywords": [
-    "kopf"
+    "button"
   ],
   "publishConfig": {
     "access": "public"
@@ -14,7 +14,7 @@
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
-  "component": "Kopf",
+  "component": "Button",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -32,15 +32,12 @@
   "bugs": {
     "url": "https://github.com/dankreiger/graffft-waggle/issues"
   },
-  "dependencies": {
-    "@graffft-waggle/burger": "^0.0.4-alpha.8",
-    "@graffft-waggle/container": "^0.0.4-alpha.14",
-    "@graffft-waggle/expandable-side-nav": "^0.0.4-alpha.13"
-  },
   "peerDependencies": {
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
-    "styled-components": "^5.1.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1",
+    "color": "^4.2.3",
+    "@types/color": "^3.0.3"
   },
   "gitHead": "3aad81a35129708683681bec3d88af3c770770d2"
 }
