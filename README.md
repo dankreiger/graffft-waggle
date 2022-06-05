@@ -2,11 +2,13 @@
 
 ### TODO:
 
-This setup is old. I'll move it to https://github.com/barking-welpe/ui
+- This setup is old. Move it to the scaffold here: https://github.com/barking-welpe/ui
 
 ![CI](https://github.com/dankreiger/graffft-waggle/workflows/CI/badge.svg)
 
 repo of isolated components managed by lerna
+
+[Demo](https://graffft-waggle.surge.sh)
 
 ## Packages
 

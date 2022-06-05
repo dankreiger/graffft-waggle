@@ -1,5 +1,5 @@
 import { fireEvent, render } from '@testing-library/react';
-import * as React from 'react';
+import React from 'react';
 import { Kopf } from '../Kopf';
 import { KopfHeaderLogoPostion } from '../Kopf.enums';
 import { KopfProps } from '../Kopf.interfaces';

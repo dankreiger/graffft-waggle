@@ -1,5 +1,5 @@
 import { Icon } from '@graffft-waggle/icon';
-import * as React from 'react';
+import React, { FC } from 'react';
 import {
   SocialBannerItemSt,
   SocialBannerWrapperSt,
@@ -7,7 +7,7 @@ import {
 import { SocialBannerDirection } from './types/SocialBanner.enums';
 import { SocialBannerProps } from './types/SocialBanner.interfaces';
 
-const SocialBanner: React.FC<SocialBannerProps> = ({
+const SocialBanner: FC<SocialBannerProps> = ({
   buttonLinks,
   linkSize = 24,
   paddingSize = 4,

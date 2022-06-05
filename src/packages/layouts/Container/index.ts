@@ -1,4 +1,6 @@
-import { ContainerSt, generateContainerCss } from './Container.styles';
-import { ContainerMaxWidths } from './Container.types';
-const Container = ContainerSt;
-export { Container, ContainerSt, generateContainerCss, ContainerMaxWidths };
+export type {
+  ContainerGeneratorProps,
+  ContainerStProps,
+} from './Container.interfaces';
+export { Container, generateContainerCss } from './Container.styles';
+export type { ContainerMaxWidths } from './Container.types';

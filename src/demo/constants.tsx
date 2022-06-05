@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import { IconType } from '@graffft-waggle/icon';
 import { KopfHeaderNavItem } from '@graffft-waggle/kopf';
-import { Colors } from '@graffft-waggle/themes-portfolio';
 import {
   SocialBanner,
   SocialBannerDirection,
 } from '@graffft-waggle/social-banner';
-import { IconType } from '@graffft-waggle/icon';
+import { Colors } from '@graffft-waggle/themes-portfolio';
+import React, { useCallback, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const navItemColors = {
@@ -13,6 +13,12 @@ const navItemColors = {
   navItemHoverColor: Colors.Primary,
   // navItemBgHoverColor: 'rgba(32,33,36,0.04)',
 };
+
+const getNavlinkStyle = ({ isActive }: { isActive: boolean }) => ({
+  textDecoration: 'none',
+  transition: 'color 250ms',
+  color: isActive ? Colors.Primary : 'currentcolor',
+});
 
 const demoLinks = [
   {
@@ -50,15 +56,7 @@ const demoLinks = [
 let baseItems: KopfHeaderNavItem[] = [
   {
     navItem: (
-      <NavLink
-        activeStyle={{ color: Colors.Primary }}
-        style={{
-          textDecoration: 'none',
-          transition: 'color 250ms',
-        }}
-        to="/"
-        exact
-      >
+      <NavLink style={getNavlinkStyle} to="/">
         Home
       </NavLink>
     ),
@@ -66,11 +64,7 @@ let baseItems: KopfHeaderNavItem[] = [
   },
   {
     navItem: (
-      <NavLink
-        activeStyle={{ color: Colors.Primary }}
-        style={{ textDecoration: 'none', transition: 'color 250ms' }}
-        to="projects"
-      >
+      <NavLink style={getNavlinkStyle} to="projects">
         Projects
       </NavLink>
     ),
@@ -78,11 +72,7 @@ let baseItems: KopfHeaderNavItem[] = [
   },
   {
     navItem: (
-      <NavLink
-        activeStyle={{ color: Colors.Primary }}
-        style={{ textDecoration: 'none', transition: 'color 250ms' }}
-        to="about"
-      >
+      <NavLink style={getNavlinkStyle} to="about">
         About
       </NavLink>
     ),
@@ -90,11 +80,7 @@ let baseItems: KopfHeaderNavItem[] = [
   },
   {
     navItem: (
-      <NavLink
-        activeStyle={{ color: Colors.Primary }}
-        style={{ textDecoration: 'none', transition: 'color 250ms' }}
-        to="contact"
-      >
+      <NavLink style={getNavlinkStyle} to="contact">
         Contact
       </NavLink>
     ),

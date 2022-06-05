@@ -3,7 +3,7 @@ import { Container } from '@graffft-waggle/container';
 import { Icon, IconMap } from '@graffft-waggle/icon';
 import { Image } from '@graffft-waggle/image';
 import { SocialBanner } from '@graffft-waggle/social-banner';
-import * as React from 'react';
+import React from 'react';
 // import { Card } from '@graffft-waggle/card';
 import { currentTechIcons, socialLinks } from './constants';
 import {
