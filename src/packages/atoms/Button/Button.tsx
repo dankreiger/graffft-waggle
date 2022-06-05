@@ -25,6 +25,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <ButtonSt
       activeColor={activeColor}
+      buttonHeight={buttonHeight}
       activeBackgroundColor={activeBackgroundColor}
       isSelected={isSelected}
       borderWidth={borderWidth}

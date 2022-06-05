@@ -69,7 +69,7 @@ export const ButtonSt = styled.button<ButtonProps>`
     css`
       border: ${borderWidth} solid ${rest[variant]};
       background-color: transparent;
-      color: rest[variant];
+      color: ${rest[variant]};
 
       &:hover {
         background-color: transparent;
