@@ -16,7 +16,6 @@ import {
 } from './Kopf.styles';
 
 const defaultHeaderLogoPosition = KopfHeaderLogoPostion.RIGHT;
-export const KopfHeaderNavItemsStTestID = 'desktop-header-nav-items';
 
 const KopfCmp: React.FC<KopfProps> = ({
   desktopMinWidth = 768,
