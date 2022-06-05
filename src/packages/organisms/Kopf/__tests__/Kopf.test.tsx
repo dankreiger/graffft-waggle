@@ -1,9 +1,10 @@
 import { within } from '@testing-library/dom';
 import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
-import { Kopf, KopfHeaderNavItemsStTestID } from '../Kopf';
+import { Kopf } from '../Kopf';
 import { KopfHeaderLogoPostion } from '../Kopf.enums';
 import { KopfProps } from '../Kopf.interfaces';
+import { KopfHeaderNavItemsStTestID } from '../Kopf.styles';
 
 const props: KopfProps = {
   headerLogo: (

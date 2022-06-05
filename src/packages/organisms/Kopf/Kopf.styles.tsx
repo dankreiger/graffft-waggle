@@ -1,6 +1,5 @@
 import { generateContainerCss } from '@graffft-waggle/container';
 import styled, { css } from 'styled-components';
-import { KopfHeaderNavItemsStTestID } from './Kopf';
 import { KopfHeaderLogoPostion } from './Kopf.enums';
 import {
   KopfContainerStProps,
@@ -10,6 +9,8 @@ import {
   KopfInnerWrapperStProps,
   KopfWrapperStProps,
 } from './Kopf.interfaces';
+
+export const KopfHeaderNavItemsStTestID = 'desktop-header-nav-items';
 
 const setPosition = ({ isFixed }: { isFixed: boolean }) => {
   if (isFixed) {

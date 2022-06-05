@@ -1,7 +1,7 @@
 import { Burger } from '@graffft-waggle/burger';
 import { ExpandableSideNav } from '@graffft-waggle/expandable-side-nav';
 import * as React from 'react';
-import { useMenuToggler } from './hooks';
+import { useKopfDefaults } from './hooks';
 import { KopfHeaderLogoPostion } from './Kopf.enums';
 import { KopfHeaderNavItem, KopfProps } from './Kopf.interfaces';
 import {
@@ -12,11 +12,10 @@ import {
   KopfInnerWrapperSt,
   KopfLogoSt,
   KopfSpacerSt,
-  KopfWrapperSt
+  KopfWrapperSt,
 } from './Kopf.styles';
 
 const defaultHeaderLogoPosition = KopfHeaderLogoPostion.RIGHT;
-export const KopfHeaderNavItemsStTestID = 'desktop-header-nav-items';
 
 const KopfCmp: React.FC<KopfProps> = ({
   desktopMinWidth = 768,
@@ -42,6 +41,7 @@ const KopfCmp: React.FC<KopfProps> = ({
   customScss = '',
   containerMaxWidths,
   breakpoints,
+  ...restSideNavProps
 }) => {
   return (
     <>
@@ -101,9 +101,10 @@ const KopfCmp: React.FC<KopfProps> = ({
           sideNavLogo={sideNavLogo}
           handleCloseSideNav={handleCloseMobileMenu}
           isExpanded={mobileMenuOpen}
-          sideNavItems={sideNavItems}
           sideNavBurgerColor={headerBurgerColor}
           expandableSideNavBgColor={headerBackgroundColor}
+          sideNavItems={sideNavItems}
+          {...restSideNavProps}
         />
       )}
       {isFixed && <KopfSpacerSt headerHeight={headerHeight} />}
@@ -112,24 +113,6 @@ const KopfCmp: React.FC<KopfProps> = ({
 };
 
 export const Kopf: React.FC<KopfProps> = (props) => {
-  let kopfProps = { ...props };
-  const extra = useMenuToggler();
-
-  // if no side nav items (mobile) passed, assign given header nav items to side nav items
-  if (!props.sideNavItems) {
-    kopfProps = {
-      ...kopfProps,
-      sideNavItems: props.headerNavItems,
-    };
-  }
-
-  // if there's no attempt to control the mobile menu, give it sensible defaults
-  if (
-    !props.handleToggleMobileMenu &&
-    !props.mobileMenuOpen &&
-    !props.handleCloseMobileMenu
-  ) {
-    kopfProps = { ...kopfProps, ...extra };
-  }
+  const kopfProps = useKopfDefaults(props);
   return <KopfCmp {...kopfProps} />;
 };
