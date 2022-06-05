@@ -43,7 +43,6 @@ export const useKopfDefaults = (props: KopfProps) => {
     ) {
       kopfProps = { ...kopfProps, ...extra };
     }
-    console.log(kopfProps);
     return kopfProps;
   }, [props, extra]);
 };
