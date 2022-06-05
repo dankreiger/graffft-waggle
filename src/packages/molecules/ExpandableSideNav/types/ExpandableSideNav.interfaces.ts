@@ -46,12 +46,12 @@ export interface ExpandableSideNavProps {
   isSetToTheLeftSide?: boolean;
   /**
    * height of side nav header item
-   * @default '77px'
+   * @default 'auto'
    */
   sideNavHeaderHeight?: string;
   /**
    * height of each side nav item
-   * @default '54px'
+   * @default 'auto'
    */
   sideNavItemHeight?: string;
 

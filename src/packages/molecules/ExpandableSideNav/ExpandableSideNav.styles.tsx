@@ -98,7 +98,10 @@ export const ExpandableSideNavHeaderSt = styled.div<{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 77px;
   height: ${({ sideNavHeaderHeight }) => sideNavHeaderHeight};
+  padding-top: ${({ sideNavItemPadding }) => sideNavItemPadding};
+  padding-bottom: ${({ sideNavItemPadding }) => sideNavItemPadding};
   ${getSideNavPadding()}
 `;
 
@@ -118,6 +121,7 @@ export const ExpandableSideNavItemSt = styled.div<ExpandableSideNavItemStProps>`
   display: flex;
   align-items: center;
   color: ${({ navItemColor }) => navItemColor};
+  min-height: 54px;
   height: ${({ sideNavItemHeight }) => sideNavItemHeight};
   ${getSideNavPadding()}
   * {

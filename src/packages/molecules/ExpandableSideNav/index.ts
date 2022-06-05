@@ -1,6 +1,6 @@
 // used for build script
 export * from './ExpandableSideNav';
-export {
+export type {
   ExpandableSideNavProps,
   NavItem,
 } from './types/ExpandableSideNav.interfaces';
