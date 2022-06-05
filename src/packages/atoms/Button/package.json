@@ -1,6 +1,6 @@
 {
   "name": "@graffft-waggle/button",
-  "version": "0.0.4-alpha.3",
+  "version": "0.0.4-alpha.15",
   "description": "graffft-waggle: a button component",
   "keywords": [
     "button"
@@ -33,11 +33,11 @@
     "url": "https://github.com/dankreiger/graffft-waggle/issues"
   },
   "peerDependencies": {
+    "@types/color": "^3.0.3",
+    "color": "^4.2.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.1.1",
-    "color": "^4.2.3",
-    "@types/color": "^3.0.3"
+    "styled-components": "^5.1.1"
   },
   "gitHead": "3aad81a35129708683681bec3d88af3c770770d2"
 }
