@@ -5,8 +5,9 @@ import {
   SocialBannerDirection,
 } from '@graffft-waggle/social-banner';
 import { Colors } from '@graffft-waggle/themes-portfolio';
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 import { useNoStoryBookStyle } from '../../../helpers/story-hooks';
+import { useMenuToggler } from './hooks';
 import { Kopf } from './Kopf';
 import { KopfHeaderNavItem, KopfProps } from './Kopf.interfaces';
 
@@ -72,17 +73,6 @@ const sideNavItems = baseItems.map((item) => ({
   ...item,
   ...sideNavItemColors,
 }));
-
-const useMenuToggler = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const handleToggleMobileMenu = useCallback(() => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  }, [mobileMenuOpen, setMobileMenuOpen]);
-  const handleCloseMobileMenu = useCallback(() => {
-    setMobileMenuOpen(false);
-  }, [setMobileMenuOpen]);
-  return { handleToggleMobileMenu, handleCloseMobileMenu, mobileMenuOpen };
-};
 
 export const Basic = (args: KopfProps) => {
   const { handleToggleMobileMenu, handleCloseMobileMenu, mobileMenuOpen } =
@@ -210,3 +200,45 @@ const argsDog: KopfProps = {
 };
 
 MoreStuff.args = argsDog;
+
+export const DefaultMobileMenu = (args: KopfProps) => {
+  const props = { ...args };
+  useNoStoryBookStyle();
+
+  return <Kopf {...props} />;
+};
+
+const argsDefaultMobileMenu: KopfProps = {
+  headerLogo: (
+    <a href="#s" style={{ color: Colors.TextCopy, textDecoration: 'none' }}>
+      Graffft Waggle
+    </a>
+  ),
+  sideNavLogo: (
+    <a href="#a" style={{ color: Colors.Primary, textDecoration: 'none' }}>
+      Graffft Waggle
+    </a>
+  ),
+  headerBackgroundColor: Colors.Secondary,
+  sideNavItems,
+  headerNavItems: [
+    ...headerNavItems,
+    {
+      navItem: (
+        <>
+          <div style={{ marginLeft: '30px' }} />
+          <SocialBanner
+            buttonLinks={demoLinks}
+            linkSize={30}
+            paddingSize={6}
+            direction={SocialBannerDirection.VERTICAL}
+            customScss={`position: absolute; right: 20px; top: 15px;`}
+          />
+        </>
+      ),
+      key: 'dog',
+    },
+  ],
+};
+
+DefaultMobileMenu.args = argsDefaultMobileMenu;
