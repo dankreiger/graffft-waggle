@@ -3,3 +3,12 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect';
+
+(global as any).MutationObserver = class {
+  _callback: any;
+  constructor(callback: any) {
+    this._callback = callback;
+  }
+  disconnect() {}
+  observe(element: any, initObject: any) {}
+};

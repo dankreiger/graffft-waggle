@@ -1,6 +1,6 @@
 import { Container } from '@graffft-waggle/container';
 import { NavItem } from '@graffft-waggle/expandable-side-nav';
-import * as React from 'react';
+import React, { FC } from 'react';
 import {
   SimpleFooterContentWrapperSt,
   SimpleFooterCopyrightTextSt,
@@ -10,7 +10,7 @@ import {
 } from './SimpleFooter.styles';
 import { SimpleFooterProps } from './types/SimpleFooter.interfaces';
 
-export const SimpleFooter: React.FC<SimpleFooterProps> = ({
+export const SimpleFooter: FC<SimpleFooterProps> = ({
   footerCopyrightText = new Date().getFullYear(),
   footerCopyrightTextColor = '#fff',
   footerItems = [],

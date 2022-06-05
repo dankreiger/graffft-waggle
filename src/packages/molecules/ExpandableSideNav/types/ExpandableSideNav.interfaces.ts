@@ -25,6 +25,11 @@ export interface ExpandableSideNavProps {
    */
   expandableSideNavBgOverlayColor?: string;
   /**
+   * expanded state background menu color
+   * @default '#fff'
+   */
+  expandableSideNavBgColor?: string;
+  /**
    * callback function to close side nav
    * @default () => {}
    */
@@ -91,6 +96,7 @@ export interface ExpandableSideNavWrapperStProps {
 export interface ExpandableSideNavContentWrapperStProps {
   isExpanded: boolean;
   isSetToTheLeftSide: boolean;
+  expandableSideNavBgColor: string;
 }
 
 export interface ExpandableSideNavItemStProps {

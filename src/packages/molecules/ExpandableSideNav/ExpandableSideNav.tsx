@@ -1,19 +1,19 @@
+import { Burger } from '@graffft-waggle/burger';
 import React, { useRef } from 'react';
+import useOnClickOutside from 'use-onclickoutside';
 import {
-  ExpandableSideNavWrapperSt,
+  ExpandableSideNavCloseButtonWrapperSt,
   ExpandableSideNavContentWrapperSt,
+  ExpandableSideNavHeaderLogoSt,
   ExpandableSideNavHeaderSt,
   ExpandableSideNavItemsSt,
   ExpandableSideNavItemSt,
-  ExpandableSideNavHeaderLogoSt,
-  ExpandableSideNavCloseButtonWrapperSt,
+  ExpandableSideNavWrapperSt,
 } from './ExpandableSideNav.styles';
 import {
   ExpandableSideNavProps,
   NavItem,
 } from './types/ExpandableSideNav.interfaces';
-import { Burger } from '@graffft-waggle/burger';
-import useOnClickOutside from 'use-onclickoutside';
 
 const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
   sideNavLogo,
@@ -21,6 +21,7 @@ const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
   sideNavItems = [],
   expandableSideNavZIndex = 300,
   expandableSideNavBgOverlayColor = 'rgba(0, 0, 0, 0.4)',
+  expandableSideNavBgColor = '#fff',
   sideNavItemHeight = '54px',
   sideNavHeaderHeight = '77px',
   sideNavItemPadding = '24px',
@@ -41,6 +42,7 @@ const ExpandableSideNav: React.FC<ExpandableSideNavProps> = ({
       <ExpandableSideNavContentWrapperSt
         isSetToTheLeftSide={isSetToTheLeftSide}
         isExpanded={isExpanded}
+        expandableSideNavBgColor={expandableSideNavBgColor}
         ref={ref}
       >
         <ExpandableSideNavHeaderSt

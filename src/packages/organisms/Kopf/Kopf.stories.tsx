@@ -201,14 +201,14 @@ const argsDog: KopfProps = {
 
 MoreStuff.args = argsDog;
 
-export const DefaultMobileMenu = (args: KopfProps) => {
+export const NoMobileMenuFns = (args: KopfProps) => {
   const props = { ...args };
   useNoStoryBookStyle();
 
   return <Kopf {...props} />;
 };
 
-const argsDefaultMobileMenu: KopfProps = {
+const argsNoMobileMenuFns: KopfProps = {
   headerLogo: (
     <a href="#s" style={{ color: Colors.TextCopy, textDecoration: 'none' }}>
       Graffft Waggle
@@ -241,4 +241,4 @@ const argsDefaultMobileMenu: KopfProps = {
   ],
 };
 
-DefaultMobileMenu.args = argsDefaultMobileMenu;
+NoMobileMenuFns.args = argsNoMobileMenuFns;

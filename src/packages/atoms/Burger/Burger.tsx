@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React, { FC } from 'react';
 import { BurgerWrapperSt } from './Burger.styles';
 import { BurgerProps } from './types/Burger.interfaces';
 
-const Burger: React.FC<BurgerProps> = ({
+const Burger: FC<BurgerProps> = ({
   isOpen,
   burgerColor = '#000',
   handleClick = () => {},
