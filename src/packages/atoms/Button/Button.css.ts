@@ -97,6 +97,18 @@ export const ButtonSt = styled.button<ButtonProps>`
     isSelected &&
     css`
       background-color: ${activeColor || rest[variant]};
+      color: ${rest[`${variant}Contrast`]};
+
+      &:hover {
+        background-color: ${activeColor || rest[variant]};
+        color: ${rest[`${variant}Contrast`]};
+      }
+      &:active {
+        background-color: ${activeColor
+          ? Color(activeColor).lighten(0.1).hex()
+          : rest[variant]};
+        color: ${rest[`${variant}Contrast`]};
+      }
     `}
 
 
