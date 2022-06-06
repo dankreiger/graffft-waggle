@@ -34,6 +34,7 @@ const getColor =
   };
 
 export const ButtonSt = styled.button<ButtonProps>`
+  position: relative;
   background-color: ${(props) => props[props.variant]};
   color: ${(props) =>
     Color(props[props.variant]).isLight() ? '#000' : '#fff'};
