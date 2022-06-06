@@ -47,10 +47,12 @@ export interface ButtonProps {
    * The color for primary shades
    */
   primary: string;
+  primaryContrast: string;
   /**
    * The color for primary shades
    */
   secondary: string;
+  secondaryContrast: string;
   /**
    * The size of the Icon.
    */

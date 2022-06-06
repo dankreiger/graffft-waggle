@@ -68,20 +68,20 @@ export const ButtonSt = styled.button<ButtonProps>`
     isOutline &&
     css`
       border: ${borderWidth} solid ${rest[variant]};
-      background-color: transparent;
+      background-color: #fff;
       color: ${rest[variant]};
 
       &:hover {
-        background-color: transparent;
+        background-color: rgba(25, 118, 210, 0.04);
         color: ${Color(rest[variant]).lighten(0.1).hex()};
       }
       &:active {
-        background-color: transparent;
+        background-color: rgba(25, 118, 210, 0.1);
         color: ${rest[variant]};
         color: ${Color(rest[variant]).darken(0.1).hex()};
       }
       &:disabled {
-        background-color: transparent;
+        background-color: rgba(25, 118, 210, 0.2);
         color: ${Color(rest[variant]).lighten(0.4).hex()};
       }
     `}
@@ -93,11 +93,10 @@ export const ButtonSt = styled.button<ButtonProps>`
       background-color: ${activeBackgroundColor};
     `}
 
-    ${({ isSelected, activeColor }) =>
+    ${({ isSelected, activeColor, variant, ...rest }) =>
     isSelected &&
-    activeColor &&
     css`
-      background-color: ${activeColor};
+      background-color: ${activeColor || rest[variant]};
     `}
 
 

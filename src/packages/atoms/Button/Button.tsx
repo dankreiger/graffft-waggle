@@ -19,7 +19,9 @@ export const Button: React.FC<ButtonProps> = ({
   onClick = () => undefined,
   padding,
   primary,
+  primaryContrast,
   secondary,
+  secondaryContrast,
   variant = 'primary',
 }) => {
   return (
@@ -36,7 +38,9 @@ export const Button: React.FC<ButtonProps> = ({
       isOutline={isOutline}
       padding={padding}
       primary={primary}
+      primaryContrast={primaryContrast}
       secondary={secondary}
+      secondaryContrast={secondaryContrast}
       variant={variant}
     >
       {children}
@@ -45,12 +49,24 @@ export const Button: React.FC<ButtonProps> = ({
 };
 
 export const createButton =
-  (variantColors: { primary: string; secondary: string }) =>
-  (props: Omit<ButtonProps, 'primary' | 'secondary'>) =>
+  (variantColors: {
+    primary: string;
+    primaryContrast: string;
+    secondary: string;
+    secondaryContrast: string;
+  }) =>
+  (
+    props: Omit<
+      ButtonProps,
+      'primary' | 'primaryContrast' | 'secondary' | 'secondaryContrast'
+    >
+  ) =>
     (
       <Button
         {...props}
         primary={variantColors.primary}
+        primaryContrast={variantColors.primaryContrast}
         secondary={variantColors.secondary}
+        secondaryContrast={variantColors.secondaryContrast}
       />
     );

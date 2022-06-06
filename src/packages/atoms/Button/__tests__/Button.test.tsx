@@ -5,7 +5,9 @@ import { ButtonProps } from '../types/Button.interfaces';
 
 const props: ButtonProps = {
   primary: '#000',
+  primaryContrast: '#fff',
   secondary: '#000',
+  secondaryContrast: '#fff',
   onClick: (e: any) => console.log('clicked: ', e),
   variant: 'primary',
   children: 'Dog',
