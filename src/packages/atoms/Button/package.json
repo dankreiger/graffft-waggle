@@ -35,8 +35,8 @@
   "peerDependencies": {
     "@types/color": "^3.0.3",
     "color": "^4.2.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.13.1 || ^18.0.0",
+    "react-dom": "^16.13.1 || ^18.0.0",
     "styled-components": "^5.1.1"
   },
   "gitHead": "3aad81a35129708683681bec3d88af3c770770d2"

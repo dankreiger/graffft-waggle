@@ -38,8 +38,8 @@
     "@graffft-waggle/expandable-side-nav": "^0.0.4-alpha.13"
   },
   "peerDependencies": {
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "styled-components": "^5.1.1"
   },
   "gitHead": "3aad81a35129708683681bec3d88af3c770770d2"
